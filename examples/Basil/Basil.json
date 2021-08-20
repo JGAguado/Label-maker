@@ -1,0 +1,78 @@
+{
+    "general": {
+        "size": [296, 128],
+        "background": [1, 1, 1],
+        "radius": 10
+    },
+    "title": {
+        "value": "Basil",
+        "font_type": "Audiowide",
+        "font_size": 16,
+        "position": [10, 20]
+    },
+    "subtitle": {
+        "value": "Ocimum basilicum",
+        "font_type": "Audiowide",
+        "font_size": 12,
+        "position": [10, 35]
+    },
+    "image":{
+        "path":  "examples/Basil/Basil.png",
+        "size": [100, 100],
+        "position": [5, 30]
+    },
+    "life-cycle": {
+        "icon": "src/sprout.png",
+        "span": "May-Oct"
+    },
+    "parameters": {
+        "moisture": {
+            "rel_range": [20, 60],
+            "abs_range": [0, 100],
+            "recomended": "3/week",
+            "unit": "%",
+            "icon": "src/water-percent.png",
+            "font_type": "Audiowide",
+            "font_size": 12,
+            "font_xoff": 5,
+            "position": [120, 50],
+            "radius": 15
+        },
+        "light": {
+            "rel_range": [2000, 6000],
+            "abs_range": [0, 10000],
+            "recomended": "High",
+            "unit": "lux",
+            "icon": "src/white-balance-sunny.png",
+            "font_type": "Audiowide",
+            "font_size": 12,
+            "font_xoff": 0,
+            "position": [160, 80],
+            "radius": 15
+        },
+        "temperature":  {
+            "rel_range": [13, 27],
+            "abs_range": [-10, 50],
+            "recomended": "15-25 C",
+            "unit": "C",
+            "icon": "src/thermometer.png",
+            "font_type": "Audiowide",
+            "font_size": 12,
+            "font_xoff": 0,
+            "position": [200, 50],
+            "radius": 15
+        },
+        "fertility": {
+            "rel_range": [300, 2000],
+            "abs_range": [0, 3000],
+            "recomended": "1/month",
+            "unit": "V/mm",
+            "icon": "src/leaf.png",
+            "font_type": "Audiowide",
+            "font_size": 12,
+            "font_xoff": 0,
+            "position": [240, 80],
+            "radius": 15
+        }
+    }
+}
