@@ -108,7 +108,7 @@ def plot_parameter(ctx, parameter, value=False, thick=5, angle=270):
         ctx.show_text(label)
 
 
-def main(path, simulation=True):
+def main(path, simulation=False):
     with open(path) as json_file:
         config = json.load(json_file)
 
@@ -169,16 +169,11 @@ def main(path, simulation=True):
                              cairo.FONT_WEIGHT_NORMAL)
         ctx.move_to(config['general']['size'][0] - (1.1*width), config['subtitle']['position'][1])
         ctx.show_text(date)
-        draw_image(ctx, 'src/sync.png',
-                   config['subtitle']['position'][1]-15,
-                   config['general']['size'][0] - 1.5*width,
-                   20, 20)
+
 
         """ Battery status"""
         bat = str(85) + "%"
-        draw_image(ctx, 'src/Battery/battery-90.png',
-                   5-config['general']['size'][0],
-                   5, 20, 20, 90)
+
         xbearing, ybearing, width, height, dx, dy = ctx.text_extents(bat)
         ctx.set_font_size(config['subtitle']['font_size'])
         ctx.select_font_face(config['subtitle']['font_type'],
@@ -186,7 +181,10 @@ def main(path, simulation=True):
                              cairo.FONT_WEIGHT_NORMAL)
         ctx.move_to(config['general']['size'][0] - width - 25, config['title']['position'][1])
         ctx.show_text(bat)
-
+        draw_image(ctx, 'src/Battery/battery-90.png',
+                   5-config['general']['size'][0],
+                   5, 20, 20, 90)
+    draw_image(ctx, 'src/calendar-sync.png', 20, 235, 15, 15)
     output = path.split('.')[0] + '_label_1.png'
     surface.write_to_png(output)
 
@@ -197,5 +195,5 @@ if __name__ == "__main__":
     ]
 
     for path in paths:
-        main(path, simulation=True)
+        main(path, simulation=False)
 
