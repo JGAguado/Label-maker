@@ -108,7 +108,7 @@ def plot_parameter(ctx, parameter, value=False, thick=5, angle=270):
         ctx.show_text(label)
 
 
-def main(path, simulation=False):
+def main(path, simulation=False, page=1):
     with open(path) as json_file:
         config = json.load(json_file)
 
@@ -151,11 +151,18 @@ def main(path, simulation=False):
     sim = 1
     if not simulation:
         sim = 0
-    plot_parameter(ctx, config['parameters']['moisture'], sim*50)
-    plot_parameter(ctx, config['parameters']['temperature'], sim*18)
-    plot_parameter(ctx, config['parameters']['light'], sim*200)
-    plot_parameter(ctx, config['parameters']['fertility'], sim*440)
 
+    if page == 1:
+        plot_parameter(ctx, config['parameters']['moisture'], sim*50)
+        plot_parameter(ctx, config['parameters']['temperature'], sim*18)
+        plot_parameter(ctx, config['parameters']['light'], sim*200)
+        # plot_parameter(ctx, config['parameters']['fertility'], sim*440)
+    if page == 2:
+        draw_image(ctx, config['bubble']['path'],
+                   config['bubble']['position'][1],
+                   config['bubble']['position'][0],
+                   config['bubble']['size'][0],
+                   config['bubble']['size'][1])
     """ Simulated data """
     if simulation:
         """ Date """
@@ -185,15 +192,17 @@ def main(path, simulation=False):
                    5-config['general']['size'][0],
                    5, 20, 20, 90)
     draw_image(ctx, 'src/calendar-sync.png', 20, 235, 15, 15)
-    output = path.split('.')[0] + '_label_1.png'
+    output = path.split('.')[0] + '_label_page_' + str(page) + '.png'
     surface.write_to_png(output)
 
 if __name__ == "__main__":
 
-    paths = ['examples/Basil/Basil.json',
+    paths = ['examples/Ficus/Ficus.json',
+             'examples/Basil/Basil.json',
              'examples/Coriander/Coriander.json'
     ]
 
     for path in paths:
-        main(path, simulation=False)
+        main(path, simulation=False, page=1)
+        main(path, simulation=False, page=2)
 
