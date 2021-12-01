@@ -21,13 +21,18 @@
         "size": [90, 90],
         "position": [2, 37]
     },
+    "bubble":{
+        "path":  "src/bubble.png",
+        "size": [190, 190],
+        "position": [60, 40]
+    },
     "life-cycle": {
         "icon": "src/sprout.png",
         "span": "May-Oct"
     },
     "parameters": {
         "moisture": {
-            "rel_range": [20, 60],
+            "rel_range": [60, 80],
             "abs_range": [0, 100],
             "recomended": "3/week",
             "unit": "%",
@@ -39,8 +44,8 @@
             "radius": 15
         },
         "light": {
-            "rel_range": [2000, 6000],
-            "abs_range": [0, 10000],
+            "rel_range": [2000, 10000],
+            "abs_range": [0, 20000],
             "recomended": "High",
             "unit": "lux",
             "icon": "src/white-balance-sunny.png",
@@ -51,7 +56,7 @@
             "radius": 15
         },
         "temperature":  {
-            "rel_range": [13, 27],
+            "rel_range": [18, 29],
             "abs_range": [-10, 50],
             "recomended": "15-25 C",
             "unit": "C",
