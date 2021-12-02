@@ -1,0 +1,133 @@
+general:
+  size: [360, 180]
+  pad: 15
+  radius: 20
+  color grad: 30
+
+text:
+  x: 250
+  y: 90
+  height: 100
+  width: 160
+  type: "Audiowide"
+  size: 18
+  scale: 12
+
+image:
+  x: 90
+  y: 90
+  height: 100
+  width: 130
+
+spices:
+  herbs:
+    color: [46, 204, 113]
+    items:
+      - en: Basil
+        es: Albahaca
+        de: Basilikum
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Albahaca.png
+      - en: Thym
+        es: Tomillo
+        de: Thymian
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Tomillo.png
+      - en: Oregano
+        es: Orégano
+        de: Oregano
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Oregano.png
+      - en: Parsley
+        es: Perejil
+        de: Petersilie
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Perejil.png
+      - en: Dill
+        es: Eneldo
+        de: Dill
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Eneldo.png
+      - en: Chives
+        es: Cebollino
+        de: Schnittlauch
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Cebollino.png
+      - en: Rosemary
+        es: Romero
+        de: Rosmarin
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Romero.png
+  hot:
+    color: [203, 67, 53]
+    items:
+      - en: Chili powder
+        es: Chile en polvo
+        de: Chilipulver
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Cayena.png
+      - en: Cayenne
+        es: Cayena
+        de: Cayenne
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Cayena.png
+      - en: Paprika
+        es: Pimentón
+        de: Paprikapulv
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Pimenton.png
+      - en: Smoked paprika
+        es: Pimentón de la Vera
+        de: Paprika geräuchert
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Pimenton_A.png
+  aromatic:
+    color: [52, 152, 219]
+    items:
+      - en: Cumin
+        es: Comino
+        de: Kümmel
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Comino.png
+      - en: Curry
+        es: Curry
+        de: Curry
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Curry.png
+      - en: Garlic
+        es: Ajo
+        de: Knoblauch
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Ajo.png
+      - en: Onion
+        es: Cebolla
+        de: Zwiebel
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Cebolla.png
+      - en: Cloves
+        es: Clavo
+        de: Nelke
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Clavo.png
+      - en: Cardamom
+        es: Cardamomo
+        de: Kardamom
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Cardamomo.png
+  sweet:
+    color: [241, 196, 15]
+    items:
+      - en: Star anise
+        es: Anis estrellado
+        de: Sternanis
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Anis_estrellado.png
+      - en: Nutmeg
+        es: Nuez moscada
+        de: Muskatnuss
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Nuez_moscada.png
+      - en: Cinnamon
+        es: Canela
+        de: Zimt
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Canela.png
+  mixes:
+    color: [155, 89, 182]
+    items:
+      - en: Steak seasoning
+        es: Mezcla para carnes
+        de: Steak Gewürzsalz
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Carne.png
+      - en: Fish seasoning
+        es: Mezcla para pescado
+        de: Fisch Gewürzzubereitung
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Pescado.png
+      - en: BBQ seasoning
+        es: Mezcla para barbacoa
+        de: Grillgewürze
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\BBQ.png
+      - en: Paella seasoning
+        es: Sazonador de paella
+        de: Paella gewürze
+        img: C:\Users\daata1598\Documents\01-Software_development\01_Python\Label-maker\0_Resources\spices\Paella.png
