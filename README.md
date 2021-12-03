@@ -1,16 +1,40 @@
-# Plants-label-maker
-Python tool for generating informative labels for plants out of JSON template files.
+[![python][python-shield]][Python]
+[![GitHub Release][releases-shield]][releases]
+[![License][license-shield]](LICENSE)
 
-![Basil](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/examples/Basil/Basil_label_2.png)
-![Coriander](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/examples/Coriander/Coriander_label_2.png)
+[![Project Maintenance][maintenance-shield]][maintenance]
+[![BuyMeCoffee][buymecoffee-shield]][buymecoffee]
+
+# Label-maker
+Python tool for generating informative labels (like labels for plant's pots or spices jars) out of JSON/YAML template files.
+
 
 ## Repository Contents
 -------------------
-* **/src** - source files like .png mdi (downloaded from https://materialdesignicons.com/)
-* **/examples** - template json files 
+* **/0_Resources**: Containing graphic material for the labels 
+* **/1_Plants**: Contains the python scripts and some examples
 
-## License Information
--------------------
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Plants label maker</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/SpaceDIY/Plants-label-maker" property="cc:attributionName" rel="cc:attributionURL">J.G.Aguado</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons ShareAlike 4.0 International License</a>.
 
-Distributed as-is; no warranty is given.
+![Basil](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/1_Plants/examples/Basil/Basil_label_2.png)
+![Coriander](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/1_Plants/examples/Coriander/Coriander_label_2.png)
+
+* **/2_Spices**: Contains the python scripts and some examples 
+
+![Cinnamon](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/2_Spices/labels/Canela_label.png)
+![Parsley](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/2_Spices/labels/Perejil_label.png)
+
+
+
+[python-shield]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[python]: https://www.python.org/
+
+[releases-shield]: https://img.shields.io/github/release/JGAguado/Label-maker.svg?style=for-the-badge
+[releases]: https://github.com/JGAguado/Label-maker/releases
+
+[license-shield]: https://img.shields.io/github/license/JGAguado/Label-maker.svg?style=for-the-badge
+
+[maintenance-shield]: https://img.shields.io/badge/maintainer-J.%20G.%20Aguado-blue.svg?style=for-the-badge
+[maintenance]: https://github.com/JGAguado
+
+[buymecoffee-shield]: https://img.shields.io/badge/buy%20me%20a%20coffee-support-yellow.svg?style=for-the-badge
+[buymecoffee]: https://www.buymeacoffee.com/J.G.Aguado
