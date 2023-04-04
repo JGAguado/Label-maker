@@ -2,24 +2,25 @@
     "general": {
         "size": [296, 128],
         "background": [1, 1, 1],
-        "radius": 10
+        "radius": 10,
+        "offline_mode": true
     },
     "title": {
-        "value": "Basil",
+        "value": "Pilea",
         "font_type": "Audiowide",
         "font_size": 20,
         "position": [5, 20]
     },
     "subtitle": {
-        "value": "Ocimum basilicum",
+        "value": "Pilea peperomioides ",
         "font_type": "Audiowide",
         "font_size": 15,
         "position": [5, 35]
     },
     "image":{
-        "path":  "examples/Basil/Basil.png",
-        "size": [80, 80],
-        "position": [0, 45]
+        "path":  "examples/Pilea/Pilea.png",
+        "size": [70, 70],
+        "position": [8, 45]
     },
     "bubble":{
         "path":  "../0_Resources/bubble.png",
@@ -38,7 +39,7 @@
     },
     "parameters": {
         "moisture": {
-            "rel_range": [50, 60],
+            "rel_range": [50, 80],
             "abs_range": [0, 100],
             "recomended": "3/week",
             "unit": "%",
@@ -50,7 +51,7 @@
             "radius": 22
         },
         "light": {
-            "rel_range": [8000, 10000],
+            "rel_range": [50, 10000],
             "abs_range": [0, 20000],
             "recomended": "High",
             "unit": "lux",
@@ -62,9 +63,9 @@
             "radius": 22
         },
         "temperature":  {
-            "rel_range": [18, 25],
-            "abs_range": [0, 40],
-            "recomended": "18-25 C",
+            "rel_range": [18, 24],
+            "abs_range": [-10, 50],
+            "recomended": "15-25 C",
             "unit": "C",
             "icon": "../0_Resources/thermometer.png",
             "font_type": "Audiowide",
@@ -74,7 +75,7 @@
             "radius": 22
         },
         "humidity": {
-            "rel_range": [40, 60],
+            "rel_range": [50, 70],
             "abs_range": [0, 100],
             "recomended": "Normal",
             "unit": "%",

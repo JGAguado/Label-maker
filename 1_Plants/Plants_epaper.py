@@ -139,6 +139,32 @@ def main(path, simulation=False, page=1):
     ctx.move_to(config['subtitle']['position'][0], config['subtitle']['position'][1])
     ctx.show_text(config['subtitle']['value'])
 
+    """ Life-cycle"""
+    if config['life-cycle']['display']:
+        lifespan = config['life-cycle']['span']
+        xbearing, ybearing, width, height, dx, dy = ctx.text_extents(lifespan)
+
+        ctx.set_font_size(config['subtitle']['font_size'])
+        ctx.select_font_face(config['subtitle']['font_type'],
+                             cairo.FONT_SLANT_NORMAL,
+                             cairo.FONT_WEIGHT_NORMAL)
+        ctx.move_to(config['general']['size'][0] - 1.1*width, config['title']['position'][1])
+        ctx.show_text(lifespan)
+
+        draw_image(ctx, config['life-cycle']['icon'],
+                   config['title']['position'][0],
+                   config['general']['size'][0] - 1.2*width - height,
+                   1.2*height,
+                   1.2*height)
+
+    """ Life-cycle"""
+    if config['synchronized']['display']:
+        draw_image(ctx, config['synchronized']['icon'],
+                   config['synchronized']['position'][0],
+                   config['synchronized']['position'][1],
+                   config['synchronized']['position'][2],
+                   config['synchronized']['position'][3])
+
     """ Image """
     draw_image(ctx, config['image']['path'],
                config['image']['position'][1],
@@ -156,6 +182,7 @@ def main(path, simulation=False, page=1):
         plot_parameter(ctx, config['parameters']['moisture'], sim*50)
         plot_parameter(ctx, config['parameters']['temperature'], sim*18)
         plot_parameter(ctx, config['parameters']['light'], sim*200)
+        plot_parameter(ctx, config['parameters']['humidity'], sim*200)
         # plot_parameter(ctx, config['parameters']['fertility'], sim*440)
     if page == 2:
         draw_image(ctx, config['bubble']['path'],
@@ -188,18 +215,22 @@ def main(path, simulation=False, page=1):
                              cairo.FONT_WEIGHT_NORMAL)
         ctx.move_to(config['general']['size'][0] - width - 25, config['title']['position'][1])
         ctx.show_text(bat)
-        draw_image(ctx, 'src/Battery/battery-90.png',
+        draw_image(ctx, '../0_Resources/Battery/battery-90.png',
                    5-config['general']['size'][0],
                    5, 20, 20, 90)
-    draw_image(ctx, 'src/calendar-sync.png', 20, 235, 15, 15)
     output = path.split('.')[0] + '_label_page_' + str(page) + '.png'
     surface.write_to_png(output)
 
 if __name__ == "__main__":
 
-    paths = ['examples/Ficus/Ficus.json',
-             'examples/Basil/Basil.json',
-             'examples/Coriander/Coriander.json'
+    paths = [
+        # 'examples/Ficus/Ficus.json',
+        #      'examples/Basil/Basil.json',
+        #      'examples/Coriander/Coriander.json',
+        #      'examples/Lemon_tree/Pilea.json',
+        #      'examples/Areca/Areca.json',
+        #      'examples/Pilea/Pilea.json',
+             'examples/Basil/Basil.json'
     ]
 
     for path in paths:

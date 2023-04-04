@@ -144,21 +144,22 @@ def main(path, simulation=True):
     ctx.show_text(config['subtitle']['value'])
 
     """ Life-cycle"""
-    lifespan = config['life-cycle']['span']
-    xbearing, ybearing, width, height, dx, dy = ctx.text_extents(lifespan)
+    if config['life-cycle']['display']:
+        lifespan = config['life-cycle']['span']
+        xbearing, ybearing, width, height, dx, dy = ctx.text_extents(lifespan)
 
-    ctx.set_font_size(config['subtitle']['font_size'])
-    ctx.select_font_face(config['subtitle']['font_type'],
-                         cairo.FONT_SLANT_NORMAL,
-                         cairo.FONT_WEIGHT_NORMAL)
-    ctx.move_to(config['general']['size'][0] - 1.1*width, config['title']['position'][1])
-    ctx.show_text(lifespan)
+        ctx.set_font_size(config['subtitle']['font_size'])
+        ctx.select_font_face(config['subtitle']['font_type'],
+                             cairo.FONT_SLANT_NORMAL,
+                             cairo.FONT_WEIGHT_NORMAL)
+        ctx.move_to(config['general']['size'][0] - 1.1*width, config['title']['position'][1])
+        ctx.show_text(lifespan)
 
-    draw_image(ctx, config['life-cycle']['icon'],
-               config['title']['position'][0],
-               config['general']['size'][0] - 1.2*width - height,
-               1.2*height,
-               1.2*height)
+        draw_image(ctx, config['life-cycle']['icon'],
+                   config['title']['position'][0],
+                   config['general']['size'][0] - 1.2*width - height,
+                   1.2*height,
+                   1.2*height)
 
     """ Image """
     draw_image(ctx, config['image']['path'],

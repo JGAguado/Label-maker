@@ -12,16 +12,15 @@ Python tool for generating informative labels (like labels for plant's pots or s
 ## Repository Contents
 -------------------
 * **/0_Resources**: Containing graphic material for the labels 
-* **/1_Plants**: Contains the python scripts and some examples
+* **/1_Plants**: Contains the python scripts and some examples for generating:
+    * Printable labels for your plants
+    * E-paper labels to have as SmartPlant background templates 
+![Basil](./1_PLants/examples/Basil/Basil_label_page_1.png) 
 
+* **/2_Spices**: Contains the python scripts and some examples of the generated printable labels for your favourite spices
 
-![Basil](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/1_Plants/examples/Basil/Basil_label_2.png)
-![Coriander](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/1_Plants/examples/Coriander/Coriander_label_2.png)
-
-* **/2_Spices**: Contains the python scripts and some examples 
-
-![Cinnamon](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/2_Spices/labels/Canela_label.png)
-![Parsley](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/2_Spices/labels/Perejil_label.png)
+    ![Cinnamon](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/2_Spices/labels/Canela_label.png)
+    ![Parsley](https://raw.githubusercontent.com/SpaceDIY/Plants-label-maker/master/2_Spices/labels/Perejil_label.png)
 
 
 
