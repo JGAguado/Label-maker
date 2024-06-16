@@ -15,8 +15,14 @@ Python tool for generating informative labels (like labels for plant's pots or s
 * **/1_Plants**: Contains the python scripts and some examples for generating:
     * Printable labels for your plants
     * E-paper labels to have as SmartPlant background templates 
+<<<<<<< .mine
 
-        ![Basil](./1_Plants/examples/Basil/Basil_label_page_1.png) 
+
+=======
+    
+      ![Basil](./1_Plants/examples/Basil/Basil_label_page_1.png) 
+>>>>>>> .theirs
+
 
 * **/2_Spices**: Contains the python scripts and some examples of the generated printable labels for your favourite spices
 
