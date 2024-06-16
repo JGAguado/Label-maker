@@ -27,8 +27,14 @@
         "position": [60, 38]
     },
     "life-cycle": {
+        "display": false,
         "icon": "../0_Resources/sprout.png",
-        "span": "May-Oct"
+        "span": "Jan-Mar"
+    },
+    "synchronized": {
+        "display": false,
+        "icon": "../0_Resources/calendar-sync.png",
+        "position": [20, 280, 15, 15]
     },
     "parameters": {
         "moisture": {

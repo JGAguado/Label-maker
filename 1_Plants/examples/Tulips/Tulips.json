@@ -31,6 +31,11 @@
         "icon": "../0_Resources/sprout.png",
         "span": "Jan-Mar"
     },
+    "synchronized": {
+        "display": true,
+        "icon": "../0_Resources/calendar-sync.png",
+        "position": [20, 280, 15, 15]
+    },
     "parameters": {
         "moisture": {
             "rel_range": [30, 60],

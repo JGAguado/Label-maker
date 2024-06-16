@@ -32,7 +32,7 @@
         "span": "Jan-Mar"
     },
     "synchronized": {
-        "display": true,
+        "display": false,
         "icon": "../0_Resources/calendar-sync.png",
         "position": [20, 280, 15, 15]
     },

@@ -10,6 +10,8 @@
 %   Date of creation: 8/19/2021
 ------------------------------------------------------------
 """
+import os
+import fnmatch
 import datetime
 import numpy as np
 import math
@@ -222,18 +224,14 @@ def main(path, simulation=False, page=1):
     surface.write_to_png(output)
 
 if __name__ == "__main__":
+    root_dir = 'examples'
+    json_files = []
+    for path, dirs, files in os.walk(root_dir):
+        for file in fnmatch.filter(files, '*.json'):
+            json_files.append(os.path.join(path, file))
 
-    paths = [
-        # 'examples/Ficus/Ficus.json',
-        #      'examples/Basil/Basil.json',
-        #      'examples/Coriander/Coriander.json',
-        #      'examples/Lemon_tree/Pilea.json',
-        #      'examples/Areca/Areca.json',
-        #      'examples/Pilea/Pilea.json',
-             'examples/Basil/Basil.json'
-    ]
-
-    for path in paths:
+    for path in json_files:
+        print('Generating path ' + path)
         main(path, simulation=False, page=1)
         main(path, simulation=False, page=2)
 
