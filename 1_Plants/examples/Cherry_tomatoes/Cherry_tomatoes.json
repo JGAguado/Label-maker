@@ -5,21 +5,21 @@
         "radius": 10
     },
     "title": {
-        "value": "Strawberry",
+        "value": "Cherry tomatoes",
         "font_type": "Audiowide",
         "font_size": 20,
         "position": [5, 20]
     },
     "subtitle": {
-        "value": "Fragaria x ananassa",
+        "value": "S. lycopersicum",
         "font_type": "Audiowide",
         "font_size": 15,
         "position": [5, 35]
     },
     "image":{
-        "path":  "examples/Strawberries/Strawberries.png",
-        "size": [70, 70],
-        "position": [5, 45]
+        "path":  "examples/Cherry_tomatoes/Cherry_tomatoes.png",
+        "size": [80, 80],
+        "position": [5, 37]
     },
     "bubble":{
         "path":  "../0_Resources/bubble.png",
@@ -38,7 +38,7 @@
     },
     "parameters": {
         "moisture": {
-            "rel_range": [50, 80],
+            "rel_range": [60, 70],
             "abs_range": [0, 100],
             "recomended": "3/week",
             "unit": "%",
@@ -50,7 +50,7 @@
             "radius": 22
         },
         "light": {
-            "rel_range": [20000, 25000],
+            "rel_range": [25000, 30000],
             "abs_range": [0, 30000],
             "recomended": "High",
             "unit": "lux",
@@ -62,7 +62,7 @@
             "radius": 22
         },
         "temperature":  {
-            "rel_range": [15, 27],
+            "rel_range": [18, 27],
             "abs_range": [-10, 50],
             "recomended": "15-25 C",
             "unit": "C",
@@ -74,7 +74,7 @@
             "radius": 22
         },
         "humidity": {
-            "rel_range": [65, 75],
+            "rel_range": [60, 70],
             "abs_range": [0, 100],
             "recomended": "Normal",
             "unit": "%",
